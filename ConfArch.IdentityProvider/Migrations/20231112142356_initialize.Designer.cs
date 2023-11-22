@@ -45,6 +45,8 @@ namespace ConfArch.IdentityProvider.Migrations
 
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
+                    b.Property<string>("TZ")
+                        .HasColumnType("varchar(10)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");

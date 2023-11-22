@@ -29,6 +29,8 @@ namespace ConfArch.IdentityProvider.Areas.Identity
                 user.CareerStartedDate.ToShortDateString()));
             identity.AddClaim(new Claim("FullName",
                 user.FullName));
+            identity.AddClaim(new Claim("TZ",
+                user.TZ));
 
             return identity;
         }

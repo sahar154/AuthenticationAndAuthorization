@@ -56,6 +56,7 @@ namespace ConfArch.Web
                     options.GetClaimsFromUserInfoEndpoint = true;
                     options.ClaimActions.MapUniqueJsonKey("CareerStarted",
                         "CareerStarted");
+                    options.ClaimActions.MapUniqueJsonKey("TZ", "TZ");
                     options.ClaimActions.MapUniqueJsonKey("FullName", "FullName");
                     options.ClaimActions.MapUniqueJsonKey("Role", "role");
                     options.ClaimActions.MapUniqueJsonKey("Permission", "Permission");

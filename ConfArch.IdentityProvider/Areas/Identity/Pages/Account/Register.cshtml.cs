@@ -51,6 +51,10 @@ namespace ConfArch.IdentityProvider.Areas.Identity.Pages.Account
             public string FullName { get; set; }
 
             [Required]
+            [Display(Name = "TZ")]
+            public string TZ { get; set; }
+
+            [Required]
             [Display(Name = "Career started")]
             [DataType(DataType.Date)]
             public DateTime CareerStarted { get; set; }
@@ -96,6 +100,7 @@ namespace ConfArch.IdentityProvider.Areas.Identity.Pages.Account
                     UserName = Input.Email, 
                     Email = Input.Email,
                     FullName = Input.FullName,
+                    TZ = Input.TZ,
                     CareerStartedDate = Input.CareerStarted
                 };
 
